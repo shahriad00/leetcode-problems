@@ -11,7 +11,7 @@
 # Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 
-# solution - time complexity - O(n2)
+# solution - time complexity - O(n2).
 
 def twoSum(nums, tar):
     res = []
