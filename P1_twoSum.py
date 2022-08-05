@@ -13,16 +13,17 @@
 
 # solution - time complexity - O(n2).
 
-def twoSum(nums, tar):
-    res = []
-    for i in range(len(nums) - 1):
-        for j in range(i + 1, len(nums)):
-            if nums[i] + nums[j] == tar:
-                res.extend([i, j])
-                break
-    return res
+class Solution(object):
+    def twoSum(nums, tar):
+        res = []
+        for i in range(len(nums) - 1):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == tar:
+                    res.extend([i, j])
+                    break
+        return res
 
 
-array = [3, 2, 3]
-target = 6
-twoSum(array, target)
+    array = [3, 2, 3]
+    target = 6
+    twoSum(array, target)
